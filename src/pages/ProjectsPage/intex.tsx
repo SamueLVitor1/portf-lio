@@ -23,7 +23,7 @@ export function ProjectsPage() {
                 </h2>
               </header>
 
-              <img src={projeto.img} alt="" />
+              <img loading="lazy" src={projeto.img} alt="" />
 
               <section>
                 <p>

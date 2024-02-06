@@ -12,7 +12,7 @@ export function LastProjects() {
         return (
           <a key={index} href={project.linkSite} target="_blank">
             <li>
-              <img src={project.img} alt="" />
+              <img loading="lazy" src={project.img} alt="" />
               <div>
                 <h3>{project.name}</h3>
                 <p>{project.text}</p>
