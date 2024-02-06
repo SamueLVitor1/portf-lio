@@ -17,11 +17,11 @@ export function Presentation() {
       </section>
 
       <footer>
-        <button>
+        <a href="https://drive.google.com/file/d/1BqWk3ScRQs_LLtzI-IpV_Iz-AMpAS8sS/view?usp=sharing" target="_blank">
           baixar cv
-        </button>
+        </a>
       </footer>
-      
+
     </PresentationContainer>
   )
 }

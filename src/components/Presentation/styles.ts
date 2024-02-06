@@ -32,13 +32,15 @@ export const PresentationContainer = styled.div`
     text-transform: capitalize;
   }
 
-  button{
+  a{
     padding: 6px 18px;
     background: transparent;
     border: 1px solid black;
     font-size: 1.4rem;
     cursor: pointer;
     border-radius: 2px;
+    color: #000;
+    text-decoration: none;
 
     &:hover{
       background-color: #09090b;
