@@ -4,7 +4,8 @@ export const AsideContainer = styled.aside`
   background-color: #f1f5f9;
   padding: 2rem;
   display: flex;
-  width: 30rem;
+  min-width: 24rem;
+  max-width: 30rem;
   flex-direction: column;
   align-items: center;
   height: 100%;
@@ -64,4 +65,15 @@ export const AsideContainer = styled.aside`
       }
     }
   }
+
+  @media (max-width: 900px) {
+    display: none; 
+  }
+`
+
+export const MenuHamburger = styled.div`
+  width: 30px;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 `

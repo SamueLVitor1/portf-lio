@@ -26,6 +26,11 @@ export const ContanctPageContainer = styled.div`
       align-items: center;
       gap: 1rem;
       font-size: 3rem;
+      
+      
+      @media (max-width: 900px) {
+        font-size: 2rem
+      }
 
       a {
         color: #000;
@@ -60,5 +65,11 @@ export const ContanctPageContainer = styled.div`
         }
       }
     }
+  }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    padding: 2rem;
+    margin-left: 0rem;
   }
 `

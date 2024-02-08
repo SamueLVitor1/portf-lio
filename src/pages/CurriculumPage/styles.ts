@@ -7,7 +7,7 @@ export const CurriculumContainer = styled.div`
   gap: 4rem;
   margin-left: 40rem;
   margin-top: 6rem;
-  margin-bottom: rem;
+  margin-bottom: 1rem;
 
   h1{
     color: #3730a3;
@@ -24,5 +24,10 @@ export const CurriculumContainer = styled.div`
     ul{
       margin-left: 2rem;
     }
+  }
+
+  @media (max-width: 900px) {
+    padding: 2rem;
+    margin-left: 0rem;
   }
 `

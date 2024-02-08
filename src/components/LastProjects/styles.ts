@@ -4,7 +4,7 @@ export const LastProjectsContainer = styled.ul`
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 4rem;
 
   a{
     color: #000;
@@ -14,6 +14,7 @@ export const LastProjectsContainer = styled.ul`
   li{
     padding: 1rem;
     padding-bottom: 2rem;
+    overflow: hidden;
     display: flex;
     align-items: center;
     gap: 1.2rem;
@@ -30,6 +31,11 @@ export const LastProjectsContainer = styled.ul`
       margin-bottom: 8px;
     }
 
+    p{
+      max-height: 8rem;
+      overflow: hidden;
+    }
+
     img{
       width: 150px;
       height: 117px;
@@ -37,7 +43,9 @@ export const LastProjectsContainer = styled.ul`
       border-radius: 4px;
       object-fit: fill;
     }
+  }
 
-    
+  @media (max-width: 900px) {
+    align-items: center;
   }
 `

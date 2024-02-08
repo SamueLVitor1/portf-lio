@@ -18,6 +18,7 @@ export const ProjectsContainer = styled.div`
 
   ul{
     list-style: none;
+    
     display: flex;
     gap: 2rem;
     flex-wrap: wrap;
@@ -33,6 +34,7 @@ export const ProjectsContainer = styled.div`
       display: flex;
       flex-direction: column;
       justify-content: space-around;
+      
 
       header{
         display: flex;
@@ -98,5 +100,11 @@ export const ProjectsContainer = styled.div`
         }
       };
     }
+  }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    padding: 2rem;
+    margin-left: 0rem;
   }
 `

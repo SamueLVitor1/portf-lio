@@ -29,7 +29,6 @@ export const PresentationContainer = styled.div`
 
   section{
     font-size: 1.7rem;
-    text-transform: capitalize;
   }
 
   a{
@@ -46,6 +45,12 @@ export const PresentationContainer = styled.div`
       background-color: #09090b;
       color: #e4e4e7;
     }
-
   }
+
+  @media (max-width: 900px) {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
 `

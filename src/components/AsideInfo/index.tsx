@@ -1,11 +1,26 @@
-import { Envelope, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
-import { AsideContainer } from "./styles";
+import { Envelope, GithubLogo, LinkedinLogo, List } from "@phosphor-icons/react";
+import { AsideContainer, MenuHamburger } from "./styles";
 import profile from "../../assets/profieeele.jpg"
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { MenuMobile } from "../MenuMobile";
 
 export function AsideInfo() {
+  const [menuIsVisible, setMenuIsVisible] = useState(false)
   return (
+
     <>
+      {window.innerWidth < 900 &&
+        <MenuHamburger>
+          <List size={30} color="#000" onClick={() => setMenuIsVisible(true)} />
+        </MenuHamburger>
+      }
+
+      <MenuMobile
+        menuIsVisible={menuIsVisible}
+        setMenuIsVisible={setMenuIsVisible}
+      />
+
       <AsideContainer>
         <img src={profile} alt="" />
 
@@ -23,7 +38,7 @@ export function AsideInfo() {
 
             <Link to="/curriculum">
               <li>Currículo</li>
-            </Link> 
+            </Link>
 
             <Link to="/contanct">
               <li>Contato</li>
