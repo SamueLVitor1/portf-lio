@@ -4,8 +4,28 @@ import geradorConselho from "./img/geradorConselho.png"
 import pokedex from "./img/pokedex.png"
 import todo from "./img/todo.png"
 import steam from "./img/SteamStore.png"
+import portfolio from "./img/port.png"
 
-export const projetos = [
+interface projetosInterface {
+  name: string,
+  img: string
+  text: string,
+  technologies: string[],
+  linkSite: string,
+  linkGitHub: string
+}
+
+export const projetos: projetosInterface[] = [
+
+  {
+    name: "Portfolio",
+    img: portfolio,
+    text: "Projeto feito com React, TypeScript e Styled Components. Navegue pelos projetos, que representa minha jornada como desenvolvedor",
+    technologies: ["React", "TypeScript", "Styled Components"],
+    linkGitHub: "https://github.com/SamueLVitor1/portf-lio",
+    linkSite: "https://portf-lio-opal.vercel.app/"
+  },
+
   {
     name: "Steam Store",
     img: steam,
