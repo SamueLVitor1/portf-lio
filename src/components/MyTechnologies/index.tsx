@@ -38,6 +38,12 @@ export function MyTechnologies() {
         <li>
           <img src="https://skillicons.dev/icons?i=nodejs" alt="" />
         </li>
+        <li>
+          <img src="https://skillicons.dev/icons?i=express" alt="" />
+        </li>
+        <li>
+          <img src="https://skillicons.dev/icons?i=postgresql" alt="" />
+        </li>
       </ul>
 
     </MyTechnologiesContainer>
